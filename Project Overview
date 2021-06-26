@@ -1,0 +1,20 @@
+Objective: Use past avocado data such as price, type (conventional/organic), size, location, climate to predict (Machine Learning)...
+
+        - Price in specific regions
+        - Whether avocado's are overpriced / underpriced, which season?
+        - How each region fares in each season?
+        - What does climate change have to do with avocado prices
+        - Organic vs Conventional, in season vs out of season
+        - Most expensive avocados vs Least expensive avocados
+           
+Data Source: hassavocadoboard.com      
+
+Demand Side: How much is sold?
+Supply Side: How much is grown?
+
+Goal By Tuesday:
+  - Get complete dataset and clean it (supply/demand, climate data, price data)
+
+Presentation Ideas:
+  - Heatmap, Line graph for price over time, Box and Whisker (interactive, show high price, low price, volume, etc.)
+  - Dropdown Menu? --> Location, show the graph of the city you selected
