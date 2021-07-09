@@ -62,3 +62,20 @@ All - find datasets
 Tyler - pricing models/patterns (by region?), above/below national/regional avgs, conventional/organic
 Ryan - look into patterns, visualizations 
 Alex - create the predictive variables --> avocado type, bag size
+
+
+
+----Trends----
+Link 1 = Avocado Price Over Time
+Link 2 = Avocado Volume Over Time
+
+----Seaborn----
+Link 1 = Avg Avocado Price by Region Over Time, considering adding line graph conventional/organic
+Link 2 = Avg Avocado Price by Type
+
+---Predictions---
+Link 1 = Linear, DecisionTree, RandomForest
+Link 2 = Prophet Trends
+
+
+
