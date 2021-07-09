@@ -6,7 +6,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-
+  .w3-1-container {
+        display: flex;
+        align-items: left;
+        justify-content: left
+    }
+img {
+        max-width: 100%
+  }
   a:link {
     text-decoration: none;
   }
@@ -31,11 +38,11 @@
 <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container"">
-   <h3><a HREF="../index.html#trends" >Main</a></h3>
+   <h3><a HREF="../index.html#prophet" >Main</a></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="../html/trends1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Avocado Price</a> 
-    <a href="../html/trends2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Avocado Volume</a> 
+    <a href="../html/pred_tests.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Initial Models</a> 
+    <a href="../html/pred_prophet.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Predictions with Prophet</a> 
   </div>
 </nav>
 
@@ -62,21 +69,30 @@
   </div>
 
   <!-- About -->
-  <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-green"><b>Mean Avocado Prices From 2015-2018</b></h1>
+<div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Prophet Forecasting: Uptrends in Volume Through 2020</b></h1>
     <hr style="width:px;border:5px solid green" class="w4-round">
-    <div>
-      <p style="float: left;"><img src="../img/trend_link1a.jpg"> </p>
-    </div>
-  </div>
-  <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-green"><b>Mean Avocado Prices Per Month </b></h1>
+    <div class="w3-1-container">
+      <div class="trend1">
+        <img src="../img/prophet_volume.jpg" style=width:850px;height:550px>
+      </div>
+      <div class="text1">
+        <p> Testing Testing</p>
+      </div>
+</div>
+
+<div class="w3-container" id="about" style="margin-top:75px">
     <hr style="width:px;border:5px solid green" class="w4-round">
-    <div>
-      <p style="float: left;"><img src="../img/trend_link1b.jpg"> </p>
+    <div class="w3-1-container">
+        <div class="trend1">
+            <img src="../img/final.PNG" style=width:700px;height:350px>
+        </div>
+        <div class="text1">
+            <p> Testing Testing</p>
+        </div>
     </div>
-  </div>
-  
+</div>
+
   
 <!-- End page content -->
 </div>

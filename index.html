@@ -35,7 +35,7 @@ body {font-size:16px;}
   </div>
   <div class="sidebar">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green border-white"><img src="img/avocado1.jpg" width=50 height=40></a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All About Avocados</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project Background</a> 
     <a href="#trends" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Existing Trends</a> 
     <a href="#seaborn" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualizations</a> 
     <a href="#prophet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Predictions</a> 
@@ -70,29 +70,31 @@ body {font-size:16px;}
 
   <!-- About -->
   <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>All About Avocados</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Background</b></h1>
     <hr style="width:px;border:5px solid green" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p><ul style=font-size:large>
+      <li> Our dataset is from the <a href="https://hassavocadoboard.com/" style=color:blue>Hass Avocado Board</a>, consisting of 18,000 rows and 13 features from January 2015 to March 2018</li>
+      <li>Methods
+        <ul>
+          <li> Cleaned data in Jupyter using Pandas and Numpy</li>
+          <li> Visualizations using Matplotlib, Plotly, Seaborn</li>
+          <li> Machine Learning & Forecasting with Scikit and Facebook Prophet</li>
+        </ul>
+      <li>The avocado market is exploding, with annual production in 2019 at 7.18 million metric tons. Average annual global production from 2011-2015 was just 4.7 million metric tons. </li>
+      <li>Hass avocados are a type of avocado native to Mexico and Southern California that accounts for 95% of all avocados eaten in the United States. </li>
+      <li>Mexico accounts for 80% of avocados imported into the United States, a number that has doubled since 2011 and currently stands at ~2,000 million pounds imported annually. </li>
   </div>
   
   <!-- trends -->
   <div class="w3-container" id="trends" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Existing Trends.</b></h1>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      </p>  
+    <h1 class="w3-xxxlarge w3-text-green"><b>Existing Trends</b></h1>
   </div>
   <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Price Over Time</li>
-        <li class="w3-padding-16">--</li>
-        <li class="w3-padding-16">
-          <span class="w3-opacity">--</span>
-        </li>
+        <li class="w3-padding-16">Yearly Data</li>
+        <li class="w3-padding-16">Monthly Data</li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href=" /html/trends1.html">View Graph</a></button>
         </li>
@@ -102,10 +104,7 @@ body {font-size:16px;}
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Volume Over Time</li>
-        <li class="w3-padding-16">---</li>
-        <li class="w3-padding-16">
-          <span class="w3-opacity">---</span>
-        </li>
+        <li class="w3-padding-16">Total Volume by Size</li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-green w3-padding-large w3-hover-black"><a href=" /html/trends2.html">View Graph</a></button>
         </li>
@@ -116,18 +115,13 @@ body {font-size:16px;}
   <!-- seaborn -->
   <div class="w3-container" id="seaborn" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-green"><b>Visualizations</b></h1>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Price by Region</li>
-        <li class="w3-padding-16">--</li>
-        <li class="w3-padding-16">
-          <span class="w3-opacity">--</span>
-        </li>
+        <li class="w3-padding-16">Yearly Price Data</li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href=" /html/visual1.html">View Graph</a></button>
         </li>
@@ -137,9 +131,8 @@ body {font-size:16px;}
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Price by Type</li>
-        <li class="w3-padding-16">---</li>
-        <li class="w3-padding-16">
-          <span class="w3-opacity">---</span>
+        <li class="w3-padding-16">Regional Price Data</li>
+        <li class="w3-padding-16">Conventional vs. Organic</li>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-green w3-padding-large w3-hover-black"><a href=" /html/visual2.html">View Graph</a></button>
@@ -150,9 +143,7 @@ body {font-size:16px;}
   
   <!-- prophet -->
   <div class="w3-container" id="prophet" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Forecasting with Prophet</b></h1>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-
+    <h1 class="w3-xxxlarge w3-text-green"><b>Predictions</b></h1>
   </div>
   <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
@@ -172,8 +163,7 @@ body {font-size:16px;}
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Predictions with Prophet</li>
         <li class="w3-padding-16">Saturated Growth Model</li>
-        <li class="w3-padding-16">Trends in Volume</li>
-        <li class="w3-padding-16">Seasonal Predictions</li>
+        <li class="w3-padding-16">Expectations for Volume</li>
           <span class="w3-opacity"></span>
         </li>
         <li class="w3-light-grey w3-padding-24">
@@ -187,11 +177,12 @@ body {font-size:16px;}
   <div class="w3-container" id="code" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-green"><b>Code & Model</b></h1>
     <hr style="width:px;border:5px solid green" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p style=color:white>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+      <button class="w3-button w3-green w3-padding-large w3-hover-grey"><a href="https://github.com/aschultz10/project3/blob/main/code/avocado.final.ipynb">Click Me</a></button>
+      <p style=color:white>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+      <p style=color:white>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+
+
   </div>
 
 <!-- End page content -->
