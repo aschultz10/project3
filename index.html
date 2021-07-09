@@ -6,6 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
@@ -23,8 +29,8 @@ body {font-size:16px;}
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">All About Avocados</a> 
     <a href="#trends" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Existing Trends</a> 
-    <a href="#seaborn" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Seaborn Visualizations</a> 
-    <a href="#prophet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Forcasting with Prophet</a> 
+    <a href="#seaborn" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualizations</a> 
+    <a href="#prophet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Predictions</a> 
     <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Code & Model</a>
   </div>
 </nav>
@@ -43,7 +49,7 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Predicting Avocado Prices with Machine Learning</b></h1>  </div>
+    <h1 class="w3-jumbo"><b>Avocado Market Predictions</b></h1>  </div>
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -78,42 +84,36 @@ body {font-size:16px;}
   </div>
 
   <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
+  <div class="w3-row-padding w4-grayscale">
+
+    <div class="w3-col m6 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="/w3images/team2.jpg" alt="John" style="width:100%">
         <div class="w3-container">
-          <h3>John Doe</h3>
+          <h3><a href="/html/trends1.html">Avocado Price Over Time</a>
+          </h3>
+
           <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Small Graph Description</p>
         </div>
       </div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
+
+
+    <div class="w3-col m6 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
-          <h3>Mike Ross</h3>
+            <h3><a href=" /html/trends2.html">Avocado Volume Over Time</a></h3>
           <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
+          <p>Small Graph Description</p>        </div>
       </div>
     </div>
   </div>
 
   <!-- seaborn -->
   <div class="w3-container" id="seaborn" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Seaborn Visualizations</b></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Visualizations</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
   </div>
@@ -140,10 +140,6 @@ body {font-size:16px;}
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
         <li class="w3-padding-16">GREAT deals</li>
         <li class="w3-padding-16">
           <h2>$ 249</h2>
@@ -161,21 +157,6 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-green"><b>Forecasting with Prophet</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
     <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom">Send Message</button>
-    </form>  
   </div>
 
   <div class="w3-container" id="code" style="margin-top:75px">
@@ -191,29 +172,7 @@ body {font-size:16px;}
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 </body>
 </html>
