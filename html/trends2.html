@@ -6,24 +6,36 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+  </style>
 <body>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Back Home<br></b></h3>
+  <div class="w3-container"">
+   <h3><a HREF="../index.html#trends" >Main</a></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#trend1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trend 1</a> 
-    <a href="#trend2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trend 2</a> 
-    <a href="#trend3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trend 3</a> 
+    <a href="../html/trends1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Avocado Price</a> 
+    <a href="../html/trends2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Avocado Volume</a> 
   </div>
 </nav>
 
@@ -39,10 +51,7 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Trend Graph 1</b></h1>  </div>
-  
+  <!-- Header -->  
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -54,18 +63,14 @@ body {font-size:16px;}
 
   <!-- About -->
   <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Example</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
-    <p>Graph Explanation</p>
-    <p>Graph Itself</p>
-    <p>Link saying "Back Home"</p>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Total Avocado Volume </b></h1>
+    <hr style="width:px;border:5px solid green" class="w4-round">
+      <p><img src="../img/trend_link2.png" style="width: 1000px;height:700px"> </p>
   </div>
   
   
 <!-- End page content -->
 </div>
-
-<!-- W3.CSS Container -->
 
 <script>
 // Script to open and close sidebar
@@ -89,4 +94,5 @@ function onClick(element) {
 </script>
 
 </body>
+  <link rel="stylesheet" href="../css/style.css">
 </html>
